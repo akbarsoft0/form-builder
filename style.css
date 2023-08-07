@@ -23,6 +23,12 @@ body {
     text-transform: capitalize;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 h1 {
     color: #fff;
     text-transform: uppercase;
@@ -30,9 +36,26 @@ h1 {
     text-align: center;
     text-shadow: 2px 2px 4px gray;
     margin-bottom: 2rem;
+
 }
 
-section {
+header a {
+    top: 2rem;
+    left: 1rem;
+    position: absolute;
+    width: 100px;
+    height: 110px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: #000 url(logo.png) no-repeat center center;
+    background-size: 80%;
+}
+
+header a:hover {
+    transform: scale(1.2);
+}
+
+body {
     padding: 4rem;
     min-height: 100vh;
     background: linear-gradient(90deg, hsla(173, 89%, 70%, 1) 0%, hsla(196, 68%, 38%, 1) 100%);
